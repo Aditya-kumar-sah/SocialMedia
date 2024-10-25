@@ -103,7 +103,7 @@ export default function Messenger() {
     <>
       <Topbar />
       <div className="h-[calc(100vh-70px)] flex">
-        <div className="flex-[3.5] p-2.5 md:flex-1">
+        <div className="w-[30%] flex flex-col items-start gap-2">
           <div className="h-full">
             <input placeholder="Search for friends" className="w-[90%] p-2 border-b border-gray-300 outline-none hidden md:block" />
             {conversations.map((c) => (
