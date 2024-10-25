@@ -119,4 +119,14 @@ router.put("/:id/unfollow", async (req, res) => {
   }
 });
 
+
+router.get("/getAllUser", async (req,res)=>{
+    try {
+      const alluser = await User.find();
+      return res.status(200).json(alluser);
+    } catch (error) {
+      return res.status(500).json({"message":"Error occurred!"})
+    }
+})
+
 module.exports = router;
