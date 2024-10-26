@@ -40,7 +40,7 @@ const Post = ({ post }) => {
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
             <Link to={`/profile/${user.username}`}>
-              <img className='h-[32px] w-[32px] rounded-[50%] object-cover' src={
+              <img className='h-[32px] w-[32px] rounded-[50%] object-cover z-20' src={
                 user.profilePicture
                   ? PF + user.profilePicture
                   : PF + "person/noAvatar.png"
